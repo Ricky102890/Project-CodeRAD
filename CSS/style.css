@@ -1,0 +1,69 @@
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 500;
+    transition: all .3s ease-in-out;
+}
+[aria-controls="navbar-dropdown"] {
+    display: none;
+}
+.navbar .container {
+    display: flex;
+    align-items: center;
+}
+a { margin-right: auto;}
+
+.nav-bar-brand {
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 100%;
+    color: var(--White);
+    transition: all .3s ease-in-out;
+}
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.bg-header {
+    background-image: url("/Images/bg-header-1.jpg");
+    background-color: #34314b;
+    background-repeat: no-repeat;
+    background-position: 50%, 50%;
+    position: relative;
+    z-index: 1;
+    padding: 4.687rem 0;
+}
+.bg-header::before {
+    background-image: linear-gradient(
+        30deg, rgba(21, 27, 38, .8) 0%,
+        rgba(0, 0, 0, .2)100%
+    );
+    position: absolute;
+    content: ' ';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.nav-link a {
+    color: var(--White);
+    font-size: .8125rem;
+    font-weight: 600;
+    font-family: 'Hind', sans-serif;
+    text-transform: uppercase;
+    margin-right: 2.5rem;
+    line-height: 1.25rem;
+}
+.hero-header {
+    color: var(--White);
+}
+
+

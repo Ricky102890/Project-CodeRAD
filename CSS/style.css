@@ -1,3 +1,20 @@
+/* Why is this not referencing in the other external stylesheet */
+:root {
+    --White: white;
+    --Black: black;
+    --font_clr_base: #666;
+    --font_clr_base_dark: #212529;
+    --font_clr_base_light: #b0aebe;
+    --font_clr_link: #57a6ff;
+    --footer: #34314b;
+    --footer_base: #2e2b45;
+    --footer_contrast: rgba(246, 248, 249, .8);
+    --success: #64ecf5;
+    --danger: #ff8b8d;
+    --grad_one: #a1ecff;
+    --grad_two: #7dbcff;
+}
+
 .navbar {
     display: flex;
     position: fixed;
@@ -102,7 +119,28 @@ a { margin-right: auto;}
     transition: all ease-in-out .3s;
     padding: 7px 25px;
 }
-
-
-
+.bg-contrast {
+    background: var(--footer_contrast);
+}
+.service-card {
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(48, 63, 100, .15);
+    background: var(--White);
+    border-radius: 8px;
+}
+.service-card span {
+    width: 70px;
+    height: 70px;
+    background: var(--font_clr_base_light);
+    display: block;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+}
+.bg-clr-1 span{ background: linear-gradient(90deg, #9ccdfe 0%, #94aafd 100%);}
+.bg-clr-2 span { background: linear-gradient(90deg, #55edc0 0%, #4bdbdb 100%);}
+.bg-clr-3 span { background: linear-gradient(90deg, #fda498 0%, #f58b9e 100%);}
+.bg-clr-4 span { background: linear-gradient(90deg, #f2a7ca 0%, #c289f4 100%);}
+.bg-clr-5 span { background: linear-gradient(90deg, #ffc187 0%, #fe93a7 100%);}
+.bg-clr-6 span { background: linear-gradient(90deg, #a1ecff 0%, #7dbcff 100%);}
 

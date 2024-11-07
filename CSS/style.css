@@ -83,7 +83,7 @@ a { margin-right: auto;}
     color: var(--White);
     padding: 1rem 0 2rem;
 }
-.why-mef {
+.why-me {
     padding: 150px 0;
 }
 .why-me-wrapper {
@@ -144,3 +144,9 @@ a { margin-right: auto;}
 .bg-clr-5 span { background: linear-gradient(90deg, #ffc187 0%, #fe93a7 100%);}
 .bg-clr-6 span { background: linear-gradient(90deg, #a1ecff 0%, #7dbcff 100%);}
 
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 150px 0;
+}

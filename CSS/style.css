@@ -14,7 +14,7 @@
     --grad_one: #a1ecff;
     --grad_two: #7dbcff;
 }
-
+/* Navigation */
 .navbar {
     display: flex;
     position: fixed;
@@ -46,6 +46,7 @@ a { margin-right: auto;}
     align-items: center;
     padding: 1rem;
 }
+/* Header */
 .bg-header,
 .video-demo {
     background-color: #34314b;
@@ -87,6 +88,8 @@ a { margin-right: auto;}
 }
 .video-box {
     position: relative;
+    margin-bottom: -150px;
+    z-index: 100;
 }
 .video-btn {
     position: absolute;
@@ -98,6 +101,10 @@ a { margin-right: auto;}
 .video-btn img {
     width: 100px;
     height: 100px;
+}
+.thumbnail-img {
+    max-width: 600px;
+    border-radius: 8px;
 }
 .nav-link a {
     color: var(--White);
@@ -112,6 +119,7 @@ a { margin-right: auto;}
     color: var(--White);
     padding: 1rem 0 2rem;
 }
+/* Why Me Section */
 .why-me {
     padding: 150px 0;
 }
@@ -151,6 +159,7 @@ a { margin-right: auto;}
 .bg-contrast {
     background: var(--footer_contrast);
 }
+/* Service Card */
 .service-card {
     padding: 30px;
     box-shadow: 0 0 10px rgba(48, 63, 100, .15);
@@ -172,7 +181,6 @@ a { margin-right: auto;}
 .bg-clr-4 span { background: linear-gradient(90deg, #f2a7ca 0%, #c289f4 100%);}
 .bg-clr-5 span { background: linear-gradient(90deg, #ffc187 0%, #fe93a7 100%);}
 .bg-clr-6 span { background: linear-gradient(90deg, #a1ecff 0%, #7dbcff 100%);}
-
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

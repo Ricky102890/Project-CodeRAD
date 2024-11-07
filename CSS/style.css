@@ -64,6 +64,45 @@ a { margin-right: auto;}
 }
 .hero-header {
     color: var(--White);
+    padding: 1rem 0 2rem;
 }
+.why-mef {
+    padding: 150px 0;
+}
+.why-me-wrapper {
+    display: flex;
+    align-items: center;
+}
+.why-me-wrapper div {
+    flex: 1;
+}
+.why-me-wrapper .block-text {
+    padding-right: 50px;
+}
+.why-me-wrapper .block-text p {
+    padding: 0 0 1rem;
+}
+.why-me-wrapper .block-text span {
+    color: var(--font_clr_base_dark);
+    font-weight: 300;
+}
+.why-me-wrapper .block-text h2 {
+    font-size: 2.5rem;
+    font-family: 'Hinds', sans-serif;
+    color: var(--font_clr_base_dark);
+    font-weight: 600;
+    margin: .5rem 0 20px;
+    line-height: 1.3;
+}
+.btn-primary {
+    background-image: linear-gradient(90deg, var(--grad_one) 0%, var(--grad_two) 100%);
+    border: 1px solid var(--grad_one);
+    box-shadow: 0 10px 20px rgba(161, 236, 255, .5);
+    color: var(--White);
+    transition: all ease-in-out .3s;
+    padding: 7px 25px;
+}
+
+
 
 

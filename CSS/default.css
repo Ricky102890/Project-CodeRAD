@@ -19,6 +19,8 @@
     --grad_two: #7dbcff;
 }
 body {
+    height: auto;
+    min-height: 100vh;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 1.6;
@@ -78,10 +80,22 @@ img {
     color: var(--font_clr_link);
     box-shadow: 0px 10px 20px rgba(255, 255, 255, .4);
 }
+.block-text h2{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--Black);
+    padding: 1rem;
+}
 
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
+    }
+}
+@media (min-width: 768px) {
+    .pricing-table,
+    .testimonial-grid {
+        max-width: 720px;
     }
 }
 

@@ -14,6 +14,7 @@
     --grad_one: #a1ecff;
     --grad_two: #7dbcff;
 }
+
 /* Navigation */
 .navbar {
     display: flex;
@@ -46,6 +47,7 @@ a { margin-right: auto;}
     align-items: center;
     padding: 1rem;
 }
+
 /* Header */
 .bg-header,
 .video-demo {
@@ -74,6 +76,7 @@ a { margin-right: auto;}
 .bg-header {
     background-image: url("/Images/bg-header-1.jpg");
 }
+
 /* Video Demo Section */
 .video-demo {
     background-image: url("/Images/bg-demo.jpg");
@@ -81,10 +84,12 @@ a { margin-right: auto;}
 }
 .video-demo .block-text {
     padding-right: 0;
+    margin-bottom: 3rem;
 }
 .video-demo .block-text h2,
 .video-demo .block-text p {
     color: var(--White);
+    margin-bottom: 1rem;
 }
 .video-box {
     position: relative;
@@ -119,6 +124,7 @@ a { margin-right: auto;}
     color: var(--White);
     padding: 1rem 0 2rem;
 }
+
 /* Why Me Section */
 .why-me {
     padding: 150px 0;
@@ -156,9 +162,22 @@ a { margin-right: auto;}
     transition: all ease-in-out .3s;
     padding: 7px 25px;
 }
+
+/* Section Contrast */
 .bg-contrast {
     background: var(--footer_contrast);
+    padding: 150px;
+    margin: 0 auto;
 }
+
+/* Services */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 150px 0;
+}
+
 /* Service Card */
 .service-card {
     padding: 30px;
@@ -181,9 +200,147 @@ a { margin-right: auto;}
 .bg-clr-4 span { background: linear-gradient(90deg, #f2a7ca 0%, #c289f4 100%);}
 .bg-clr-5 span { background: linear-gradient(90deg, #ffc187 0%, #fe93a7 100%);}
 .bg-clr-6 span { background: linear-gradient(90deg, #a1ecff 0%, #7dbcff 100%);}
-.service-grid {
+
+/* Pricing */
+.pricing-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    gap: 18px;
+    margin: auto;
+    align-items: flex-start;
+}
+.pricing-header {
+    text-align: center;
+    padding-right: 0;
+}
+.block-text.pricing-header {
+    margin: 100px 0;
+}
+.pricing-header h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-family: 'Hinds', sans-serif;
+    color: var(--font_clr_base_dark);
+    font-weight: 600;
+}
+.price-card {
+    background: var(--White);
+    border-radius: 8px;
+    padding: 16px;
+}
+.price-card.featured {
+    box-shadow: 0 10px 20px rgba(82, 179, 255, .2);
+    margin-top: -1rem;
+}
+.plan-btn-wrapper {
+    text-align: center;
+}
+.price-card li {
+    margin-bottom: 20px;
+}
+.price-card h3 {
+    margin-top: 40px;
+    font-size: 18px;
+    color: var(--font_clr_base_dark);
+    font-weight: 600;
+}
+.price-card .price {
+    color: var(--font_clr_link);
+    font-size: 30px;
+    font-weight: 600;
+}
+.price-card .billed {
+
+}
+.price-card h3,
+.price-card .price,
+.price-card .billed {text-align: center;}
+
+.price-card .title {}
+.price-card .icon {
+    float: right;
+    font-weight: 600;
+}
+.price-card .checked {color: var(--success);}
+.price-card .times {color: var(--danger);}
+.price-card hr {
+    margin: 2rem 0 1rem;
+    background-color: var(--font_clr_base);
+}
+
+/* Testimonials */
+.testimonials {
+    margin: 100px 0;
+}
+.testimonial-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
     gap: 20px;
-    padding: 150px 0;
+}
+.testimonials .block-text {
+    padding-right: 0;
+    text-align: center;
+    margin: 100px 0;
+}
+.testimonials .block-text h2 {
+    font-size: 2rem;
+    padding-right: 0;
+    text-align: center;
+    margin: 100px 0;
+}
+.testimonial-card {
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    padding: 30px;
+}
+.testimonial-card.lg {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+}
+.testimonial-card.lg .top img {
+    width: 80px;
+    height: 80px;
+}
+.testimonial-card.lg .bottom .quote img{
+    width: 70px;
+    float: right;
+    margin-top: 16px;
+}
+.testimonial-card.lg.profile {width: 80px;}
+.testimonial-card.sm {
+    
+}
+.testimonial-card.sm .bottom p {font-size: 14px;}
+.testimonial-card .top {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.testimonial-card .top h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.testimonial-card .bottom p {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.testimonial-card img.profile {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.testimonial-card .top-info h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.top-info span {
+    
 }

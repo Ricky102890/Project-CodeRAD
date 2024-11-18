@@ -18,6 +18,9 @@
     --grad_one: #a1ecff;
     --grad_two: #7dbcff;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     height: auto;
     min-height: 100vh;
@@ -55,7 +58,6 @@ img {
 }
 
 .container {
-    display: block;
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;

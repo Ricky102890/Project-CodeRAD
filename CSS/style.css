@@ -452,3 +452,21 @@ footer .contact-info {
 .copyright p {
     color: var(--font_clr_base_light);
 }
+
+/* Scroll Up Button */
+#scrollUp i{
+    background-image: linear-gradient(90deg, #9ccefe 0%, #94aafd 100%);
+    background-color: transparent;
+    color: var(--White);
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 100;
+}

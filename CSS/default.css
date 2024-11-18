@@ -55,6 +55,7 @@ img {
 }
 
 .container {
+    display: block;
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
@@ -87,15 +88,20 @@ img {
     padding: 1rem;
 }
 
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-}
 @media (min-width: 768px) {
     .pricing-table,
-    .testimonial-grid {
+    .testimonial-grid,
+    .footer-bottom-wrapper {
         max-width: 720px;
     }
 }
-
+@media (min-width: 992px) {
+    footer .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1440px;
+    }
+}

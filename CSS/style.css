@@ -33,7 +33,6 @@
     align-items: center;
 }
 a { margin-right: auto;}
-
 .nav-bar-brand {
     margin-right: auto;
     font-size: 2rem;
@@ -249,14 +248,9 @@ a { margin-right: auto;}
     font-size: 30px;
     font-weight: 600;
 }
-.price-card .billed {
-
-}
 .price-card h3,
 .price-card .price,
 .price-card .billed {text-align: center;}
-
-.price-card .title {}
 .price-card .icon {
     float: right;
     font-weight: 600;
@@ -309,9 +303,6 @@ a { margin-right: auto;}
     margin-top: 16px;
 }
 .testimonial-card.lg.profile {width: 80px;}
-.testimonial-card.sm {
-    
-}
 .testimonial-card.sm .bottom p {font-size: 14px;}
 .testimonial-card .top {
     display: flex;
@@ -341,11 +332,8 @@ a { margin-right: auto;}
     font-weight: 600;
     font-size: 18px;
 }
-.top-info span {
-    
-}
-/* Footer */
 
+/* Footer */
 footer .container {
     max-width: 1440px;
     margin: 0;
@@ -388,9 +376,6 @@ footer .contact-info {
 .contact-info li i {
     width: 30px;
 }
-.social-icons ul {
-
-}
 .social-icons ul li {
     display: inline-block;
     margin-right: 16px;
@@ -398,9 +383,6 @@ footer .contact-info {
 .social-icons ul li a {
     color: var(--White);
     font-size: 16px;
-}
-.social-icons ul li i {
-
 }
 .services-wrapper {
     margin: 16px 0;

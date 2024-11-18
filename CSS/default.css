@@ -33,30 +33,24 @@ body {
     padding: 0;
     font-size: .875rem;
 }
-
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
 a { text-decoration: none;}
-
 p { margin-top: 0;}
-
 h2 {
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.2;
 }
-
 img {
     width: 100%;
     max-width: 100%;
     vertical-align: middle;
     border-style: none;
 }
-
 .container {
     width: 100%;
     padding-left: 15px;
@@ -64,7 +58,6 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-
 .btn {
     display: inline-block;
     font-weight: 400;
@@ -90,6 +83,7 @@ img {
     padding: 1rem;
 }
 
+/* Media Queries */
 @media (min-width: 768px) {
     .pricing-table,
     .testimonial-grid,

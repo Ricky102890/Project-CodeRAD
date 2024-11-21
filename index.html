@@ -20,7 +20,7 @@
     <div id="pageTop"></div>
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="topNav">
         <div class="container">
             <button class="navbar-toggler" aria-expanded="false" aria-controls="navbar-dropdown"><span>&#9776;</span></button>
             <a href="/CodeRAD/index.html" class="nav-bar-brand">CodeRAD</a>
@@ -480,6 +480,28 @@
     <a id="scrollUp" href="#pageTop">
         <i class="fas fa-arrow-up"></i>
     </a>
+    <script>
+        const navButton = document.querySelector('button[aria-expanded]');
 
+        function toggleNav({ target }) {
+            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+            navButton.setAttribute('aria-expanded', !expanded);
+        }
+
+        navButton.addEventListener('click', toggleNav);
+
+        // Navigation Bar Scroll
+        const nav = document.getElementById("topNav");
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add("sticky");
+            }
+           else {
+            nav.classList.remove("sticky");
+            }
+            
+        }
+
+    </script>
 </body>
 </html>

@@ -74,8 +74,13 @@ a { margin-right: auto;}
 }
 .bg-header {
     background-image: url("/Images/bg-header-1.jpg");
+    padding: 150px;
 }
 
+.block-text span {
+    color: var(--font_clr_base_dark);
+    font-weight: 300;
+}
 /* Video Demo Section */
 .video-demo {
     background-image: url("/Images/bg-demo.jpg");
@@ -88,7 +93,7 @@ a { margin-right: auto;}
 .video-demo .block-text h2,
 .video-demo .block-text p {
     color: var(--White);
-    margin-bottom: 1rem;
+    margin: 50px 0;
 }
 .video-box {
     position: relative;
@@ -136,7 +141,8 @@ a { margin-right: auto;}
     flex: 1;
 }
 .why-me-wrapper .block-text {
-    padding-right: 50px;
+    padding-right: 100px;
+    max-width: 550px;
 }
 .why-me-wrapper .block-text p {
     padding: 0 0 1rem;
@@ -225,7 +231,7 @@ a { margin-right: auto;}
 .price-card {
     background: var(--White);
     border-radius: 8px;
-    padding: 16px;
+    padding: 40px 16px;
 }
 .price-card.featured {
     box-shadow: 0 10px 20px rgba(82, 179, 255, .2);
@@ -234,6 +240,10 @@ a { margin-right: auto;}
 .plan-btn-wrapper {
     text-align: center;
 }
+.plan-btn-wrapper a {
+    width: 100%;
+}
+
 .price-card li {
     margin-bottom: 20px;
 }
@@ -360,6 +370,7 @@ footer .footer-col h5 {
 .footer-top h5 {
     color: var(--White);
     font-weight: 500;
+    font-size: 16px;
     margin-bottom: 16px;
 }
 footer .contact-info {
@@ -390,6 +401,9 @@ footer .contact-info {
 .services-wrapper p {
     color: #858497;
 }
+.services-wrapper h5 {
+    margin-bottom: initial;
+}
 .recent-posts {
     display: flex;
     margin-bottom: 16px;
@@ -406,9 +420,11 @@ footer .contact-info {
 .recent-posts h6 {
     color: var(--White);
     font-weight: 600;
+    font-size: 12px;
 }
 .recent-posts a {
     color: var(--White);
+    font-size: .75rem;
 }
 .recent-posts span {
     color: var(--font_clr_base_light);

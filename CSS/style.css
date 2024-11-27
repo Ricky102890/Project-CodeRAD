@@ -90,12 +90,17 @@ a { margin-right: auto;}
 }
 .bg-header {
     background-image: url("/Images/bg-header-1.jpg");
-    padding: 150px;
+    padding: 150px 0;
 }
 
 .block-text span {
     color: var(--font_clr_base_dark);
     font-weight: 300;
+}
+
+.hero-header {
+    color: var(--White);
+    padding: 1rem 0 2rem;
 }
 /* Video Demo Section */
 .video-demo {
@@ -140,10 +145,6 @@ a { margin-right: auto;}
     margin-right: 2.5rem;
     line-height: 1.25rem;
 }
-.hero-header {
-    color: var(--White);
-    padding: 1rem 0 2rem;
-}
 
 /* Why Me Section */
 .why-me {
@@ -187,7 +188,7 @@ a { margin-right: auto;}
 /* Section Contrast */
 .bg-contrast {
     background: var(--footer_contrast);
-    padding: 150px;
+    padding: 150px 0;
     margin: 0 auto;
 }
 
@@ -226,9 +227,9 @@ a { margin-right: auto;}
 .pricing-table {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
-    gap: 18px;
+    gap: 30px;
     margin: auto;
-    align-items: flex-start;
+    align-items: start;
 }
 .pricing-header {
     text-align: center;
@@ -243,6 +244,13 @@ a { margin-right: auto;}
     font-family: 'Hinds', sans-serif;
     color: var(--font_clr_base_dark);
     font-weight: 600;
+}
+.pricing-header p {
+    text-align: center;
+    width: 450px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .price-card {
     background: var(--White);
@@ -360,6 +368,9 @@ a { margin-right: auto;}
 }
 
 /* Footer */
+footer {
+
+}
 footer .container {
     max-width: 1440px;
     margin: 0;
@@ -369,7 +380,7 @@ footer .footer-top {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 50px;
-    padding: 100px 0;
+    padding: 100px 10px;
     background-color: var(--footer);
 }
 footer .footer-bottom {
@@ -382,6 +393,7 @@ footer .footer-col h5 {
 }
 .footer-top .footer-col {
     justify-self: center;
+    max-width: 250px;
 }
 .footer-top h5 {
     color: var(--White);
@@ -485,7 +497,13 @@ footer .contact-info {
     z-index: 100;
 }
 
-
+/* Large Tablets */
+@media screen and (max-width: 850px) {
+    
+    .footer-col:nth-child(3) {
+        grid-column: 1 / 3;
+    }
+}
 
 /* iPads And Tablets */
 @media screen and (max-width: 768px) {
@@ -518,7 +536,47 @@ footer .contact-info {
         box-shadow: 0px 0px 20px rgba(52, 49, 75, .1);
     }
     [aria-expanded="true"] ~ ul a {
-        margin-right: 20px;
+        margin-right: 20px; 
         color: var(--font_clr_base_dark);
+    }
+    
+}
+@media (max-width: 480px) {
+    .bg-header {
+        text-align: center;
+    }
+    .why-me-wrapper {
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+    .why-me-wrapper > div {
+        flex: initial;
+        padding-right: 0;
+        text-align: center;
+    }
+    .service-grid {
+        padding-top: 0;
+    }
+    .why-me-wrapper .block-text {
+        padding-right: 0;
+    }
+    .bg-contrast {
+        padding-bottom: 10px;
+    }
+    .pricing-header p {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .pricing-header h2 {
+        padding: 0 40px;
+    }
+    .pricing-table {
+        gap: 30px;
+    }
+    .footer-top .footer-col:nth-child(3) {
+        grid-column: initial;
+    }
+    .footer-top .footer-col:nth-child(1) {
+        order: 3;
     }
 }
